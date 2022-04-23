@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+
+.container {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clr {
+    clear: both;
+}
+
+/********************** Common css end ********************************/
+
+/********************** menu part start ********************************/
+#menu_bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    flex-basis: 15%;
+    line-height: 110px;
+}
+
+.menu_part {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px 0;
+}
+
+.main_menu {
+    flex-basis: 85%;
+    line-height: 110px;
+}
+
+.main_menu ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main_menu ul li a {
+    margin-left: 50px;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'Gentium Book Basic', serif;
+    position: relative;
+}
+
+.main_menu ul li a::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    content: '';
+    position: absolute;
+    background: #fff;
+    transition: all linear 0.2s;
+    transform: scaleX(0);
+}
+
+.main_menu ul li a:hover::after {
+    height: 3px;
+    transform: scaleX(1);
+}
+
+/********************** menu part end ********************************/
+
+/********************** banner part start ********************************/
+#banner_part {
+    background: url(../images/bannner.jpg);
+    padding: 245px 0 140px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banner_item {
+    text-align: center;
+}
+
+.banner_item h1 {
+    font-size: 90px;
+    font-weight: 400px;
+    font-family: 'Yeseva One', cursive;
+    color: #fff;
+}
+
+.banner_item img {
+    padding: 35px;
+}
+
+.ban_btn {
+    text-align: center;
+}
+
+.ban_btn a {
+    padding: 20px 50px;
+    border: 1px solid #fff;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.28);
+}
+
+.ban_btn a:last-child {
+    margin-left: 25px;
+}
+
+.ban_btn a:hover {
+    border: 1px solid #000000;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/********************** banner part end ********************************/
+
+/********************** banner 2 part start ********************************/
+#food_part {
+    background: url(../images/banner2.jpg);
+    padding: 100px 0 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.food_cont {
+    display: flex;
+}
+
+.food_txt {
+    width: 100%;
+    text-align: center;
+    margin-left: 110px;
+    margin-right: 25px;
+}
+
+.food_txt h2 {
+    font-size: 36px;
+    color: #cc9900;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+}
+
+.food_line {
+    padding: 15px 0 30px;
+}
+
+.food_txt p {
+    font-size: 16px;
+    color: #4c4c4c;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 55px;
+}
+
+.food_img {
+    width: 100%;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.food_img img {
+    width: 100%;
+}
+
+/********************** banner 2 part end ********************************/
+
+/********************** banner 3 part start ********************************/
+#banner3part {
+    background: url(../images/banner3.jpg);
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.ban3div {
+    padding: 80px 70px;
+    background: rgba(0, 0, 0, 0.67);
+    margin-left: 640px;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.ban3div h2 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+}
+
+.ban3divline {
+    padding: 15px 0 30px;
+}
+
+.ban3div p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 65px;
+}
+
+.ban3imgdiv img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.ban3imgdiv img:nth-child(2) {
+    margin: 0 30px;
+}
+
+/********************** banner 3 part end ********************************/
+
+/********************** banner 4 part start ********************************/
+#banner2part {
+    background: url(../images/banner2.jpg);
+    padding: 100px 0 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.AppetSalad {
+    width: 40%;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+.banner2cont {
+    display: flex;
+}
+
+.appetisers {
+    width: 100%;
+    text-align: center;
+}
+
+.appetisers h3 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #cc9900;
+    font-family: 'Yeseva One', cursive;
+}
+
+.tzatsiki p {
+    font-size: 21px;
+    font-weight: 400;
+    color: #cc9900;
+    font-family: 'Yeseva One', cursive;
+}
+
+.appetisers img {
+    padding: 15px 0 30px;
+}
+
+.tzatsiki {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.tzatsiki::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    background: #cc9900;
+    top: 30px;
+    right: 0;
+    width: 100%;
+}
+
+.apptis_txt {
+    font-size: 16px;
+    color: #4c4c4c;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.apptis_txt:last-child {
+    margin-bottom: 70px;
+}
+
+.starters {
+    width: 40%;
+}
+
+.AppetSalad:first-child {
+    margin-right: 170px;
+}
+
+.AppetSalad:last-child {
+    margin-left: 0;
+}
+
+/********************** banner 4 part end ********************************/
+
+/********************** banner 5 part start ********************************/
+#banner5part {
+    background: url(../images/banner5.jpg);
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.ban5div {
+    margin: 0 240px;
+    padding: 80px 70px;
+    background: rgba(0, 0, 0, 0.67);
+    text-align: center;
+}
+
+.ban5div h2 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Yeseva One', cursive;
+}
+
+.ban5div h3 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Gentium Book Basic', serif;
+}
+
+.ban5div p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    margin-top: 45px;
+}
+
+.ban5lineimg {
+    padding: 15px 0 30px;
+}
+
+/********************** banner 5 part end ********************************/
+
+/********************** banner 6 part start ********************************/
+#banner6part {
+    background: url(../images/banner2.jpg);
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.ban6img {
+    width: 51.6%;
+}
+
+.ban6img img {
+    margin-left: 40px;
+}
+
+.ban6txt {
+    width: 430px;
+    margin: 0 90px 0 85px;
+    text-align: center;
+}
+
+.ban6cont {
+    display: flex;
+}
+
+.ban6txt h2 {
+    font-size: 36px;
+    color: #cc9900;
+    font-family: 'Yeseva One', cursive;
+}
+
+.ban6txt p {
+    font-size: 16px;
+    color: #4c4c4c;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 70px;
+}
+
+.ban6divimg {
+    padding: 15px 0 30px;
+}
+
+#TBname {
+    width: 200px;
+    padding: 5px 10px 5px 15px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    background: none;
+    border: 2px solid #c8c6c6;
+    position: relative;
+    margin-bottom: 45px;
+    margin-right: 25px;
+    font-style: italic;
+    transition: all linear 0.2s;
+}
+
+#TBemail {
+    width: 200px;
+    padding: 5px 10px 5px 15px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    background: none;
+    border: 2px solid #c8c6c6;
+    position: relative;
+    margin-bottom: 45px;
+    font-style: italic;
+    transition: all linear 0.2s;
+}
+
+#TBdate {
+    width: 200px;
+    padding: 5px 10px 5px 15px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    background: none;
+    border: 2px solid #c8c6c6;
+    position: relative;
+    margin-right: 25px;
+    font-style: italic;
+    transition: all linear 0.2s;
+}
+
+#TBnumber {
+    width: 200px;
+    padding: 5px 10px 5px 15px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    background: none;
+    border: 2px solid #c8c6c6;
+    position: relative;
+    font-style: italic;
+    transition: all linear 0.2s;
+}
+
+.ban6txt form label {
+    position: absolute;
+    font: 14px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color: #c9a131;
+    margin-top: -25px;
+}
+
+#submitbtn {
+    padding: 10px 60px;
+    background: #c9a131;
+    border: none;
+    margin-top: 35px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#TBname:focus {
+    border: 2px solid #c9a131;
+}
+
+#TBemail:focus {
+    border: 2px solid #c9a131;
+}
+
+#TBdate:focus {
+    border: 2px solid #c9a131;
+}
+
+#TBnumber:focus {
+    border: 2px solid #c9a131;
+}
+
+#TBname:hover {
+    border: 2px solid #c9a131;
+}
+
+#TBemail:hover {
+    border: 2px solid #c9a131;
+}
+
+#TBdate:hover {
+    border: 2px solid #c9a131;
+}
+
+#TBnumber:hover {
+    border: 2px solid #c9a131;
+}
+
+/********************** banner 6 part end ********************************/
+
+/********************** footer part end ********************************/
+#footer_part {
+    background: #191919;
+}
+
+.footer_cont {
+    display: flex;
+}
+
+.about_footer {
+    margin: 50px 100px 50px 40px;
+    width: 370px;
+    text-align: center;
+}
+
+.about_footer p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about_footer h3 {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Yeseva One', cursive;
+}
+
+.opening_footer h3 {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Yeseva One', cursive;
+}
+
+.opening_footer {
+    margin: 50px 170px 50px 0;
+    width: 230px;
+    text-align: center;
+}
+
+.opening_footer p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.opening_footer ul li {
+    padding: 0 10px;
+    color: #fff;
+    float: left;
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+.opening_footer ul li:first-child {
+    padding-left: 48px;
+}
+
+.opening_footer:last-child {
+    margin-right: 110px;
+}
+
+.lastPfot {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/********************** footer part end ********************************/
